@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All the memes!</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header>
+    <h1 class="center">Top trending news today</h1>
+</header>
+<main>
+    <div class="container">
+        <div id="news">
+
+        </div>
+
+    </div>
+</main>
+
+<script>
+    async function fetchTrending() {
+    var url = 'https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=9233d93e3f414c119fbfaf44b8dc414b';
+
+    const res = await fetch(url);
+    const myJson = await res.json();
+    var newlist=[];
+    var array=myJson.articles;
+    //console.log(array);
+    for( var i=0; i<array.length;++i){
+      console.log(array[i].title);
+      newlist.push(array[i].title);
+      var newLI = document.createElement("li");
+      var item = newlist[i];
+      
+      var newContent = document.createTextNode(item);
+      var link = document.createElement("a");
+    link.setAttribute("href",array[i].url);
+    
+    link.appendChild(newContent);
+      newLI.appendChild(link);
+     
+      var tp = document.getElementById("news");     
+      tp.appendChild(newLI);
+
+    }
+}
+fetchTrending();
+
+    </script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
