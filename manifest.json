@@ -1,4 +1,6 @@
 {
+  "name": "KnowYou",
+  "short_name": "KY",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "standalone",
