@@ -5,7 +5,7 @@
   "background_color": "#00457c",
   "display": "standalone",
   "Scope": "/",
-  "start_url": "/KnowYou/",
+  "start_url": "/AboutYou/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
