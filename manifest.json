@@ -1,11 +1,9 @@
 {
-  "name": "KnowYou",
-  "short_name": "KY",
-  "theme_color": "#298b4d",
-  "background_color": "#00457c",
-  "display": "standalone",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "browser",
   "Scope": "/",
-  "start_url": "/AboutYou/",
+  "start_url": "/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
