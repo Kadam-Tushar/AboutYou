@@ -3,7 +3,7 @@
   "background_color": "#2196f3",
   "display": "browser",
   "Scope": "/",
-  "start_url": "/",
+  "start_url": "/AboutYou/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
