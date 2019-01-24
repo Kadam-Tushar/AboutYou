@@ -1,4 +1,4 @@
-const staticFiles = [
+const staticAssets = [
     './',
     './style.css',
     './app.js',
