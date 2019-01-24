@@ -1,12 +1,12 @@
 {
   "name": "AboutYou",
-  "short_name": "AboutYou",
+  "short_name": "AY",
   "theme_color": "#2780c6",
   "background_color": "#277ec4",
-   "display": "standalone",
+  "display": "standalone",
   "orientation": "portrait",
   "Scope": "/",
-	"start_url": "/AboutYou/",
+  "start_url": "/AboutYou/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
