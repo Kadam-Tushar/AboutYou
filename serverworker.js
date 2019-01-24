@@ -23,7 +23,7 @@ self.addEventListener("fetch", (e) => {
     var dictUrl = "https://cors-anywhere.herokuapp.com/https://insult.mattbas.org/api/insult.json?who=";
 
     // If >-1, ie. the URL is present in the request, ie. request successful and WE ARE ONLINE =>
-    console.log(e.request.url+" **************************************");
+    console.log(e.request.url);
 
     if(e.request.url.indexOf(dictUrl) > -1){
         e.respondWith(

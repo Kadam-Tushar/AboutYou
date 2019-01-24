@@ -19,17 +19,15 @@
 async function cuss(){    
 
     var name= document.getElementById("victim").value;
-    console.log(name);
 var url="https://cors-anywhere.herokuapp.com/https://insult.mattbas.org/api/insult.json?who="+name;
 
 
-console.log(url);
+
 
 let res= await fetch(url);
 let rr= await res.json();
-console.log(res.url);
+console.log(rr);
 document.getElementById("fill").innerHTML=rr.insult;
-console.log(rr.insult);
 
 }
 </script>
