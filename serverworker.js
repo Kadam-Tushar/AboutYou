@@ -40,6 +40,7 @@ self.addEventListener("fetch", (e) => {
     }
     // ELSE, WE ARE OFFLINE, fetch data from cache, or try to fetch it.
     else{
+        console.log("offline");
         e.respondWith(
             // Search cache for a match =>
             caches.match(e.request).then((res) => {
